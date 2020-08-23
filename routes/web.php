@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/get-credentials', function () {
+    return view('get-credentials');
+});
+
+Route::get('/test-mail', function () {
+    return view('emails.test');
+});
