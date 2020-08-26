@@ -2,14 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-    <link rel="stylesheet" href="{{ asset('styles/emailCredentialStyles.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">    
+    <style>
+        body {
+            margin:0;
+            padding:0
+        }
+
+        .back-background {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border: 1px solid transparent;
+            margin: 2%;
+            background-color: #eeeeee;
+        }
+
+        .front-background {
+            border: 1px solid transparent;
+            margin: 20px;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        .center-element {
+            display: block;
+            margin:auto;
+            width: 40%;
+        }
+
+        .space-20 {
+            margin-bottom: 20px;
+        }
+
+        .space-60 {
+            margin-bottom: 40px;
+        }
+
+        .space-60 {
+            margin-bottom: 60px;
+        }
+
+        .mail-color {
+            color: #0071e4;
+        }
+
+        .emoji-size {
+            font-size: 20px;
+        }
+
+        .center-tex {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <div class="back-background">
         <div class="front-background">            
-            <img class="center-element space-20" src="{{ asset('img/UniremingtonVerticalLogo.png') }}" alt="">            
-            <p><strong>!Hola {{ $credentials->name }}!</strong>, recibe un saludo de parte de Uniremington Manizales.</p>
+            <img class="center-element space-20" src="http://consultas.uniremingtonmanizales.edu.co/consultas/public/img/UniremingtonVerticalLogo.png" alt="">
+            <p><strong>! Hola {{ $credentials->name }} !</strong>, recibe un saludo de parte de Uniremington Manizales.</p>
 
             <p class="space-60">A continuación encontrarás el usuario y contraseña para acceder a la Biblioteca Virtual Gustavo Vásquez Betancourt y al correo general de Uniremington</p>
 
