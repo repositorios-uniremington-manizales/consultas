@@ -10,11 +10,15 @@ use App\Mail\SendCredentialsForEmail;
 class SendEmailController extends Controller
 {
     public function sendCredentialsForEmail(Request $request){
-        $identification = $request->identification;                
+        $identification = $request->identification;        
         $credentials = Credentials::where('identification', $identification)->first();
-        
-        Mail::to($credentials->institutionalMail)->send(new SendCredentialsForEmail($credentials));
-        
-        return response()->json('Mensaje Enviado');
+        if($credentials === null){
+
+            return response()->json('error');
+        }else{
+
+            Mail::to($credentials->institutionalMail)->send(new SendCredentialsForEmail($credentials));
+            return response()->json($credentials->institutionalMail);
+        }
     }
 }

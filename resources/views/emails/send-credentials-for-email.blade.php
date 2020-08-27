@@ -70,29 +70,27 @@
 
             <p class="space-40">Correo institucional de Uniremington Manizales <strong>(@uniremingtonmanizales.edu.co)</strong> y el correo general de Uniremington <strong>(@miremington.edu.co)</strong></p>
 
-            <p>Si su primer apellido contiene el caracter especial <strong>'ñ'</strong> utilícelo para el ingreso a la Biblioteca y al correo general<p>
-                
-            <p><strong>Ejemplo:</strong> Si su usuario es <strong><i>nombre.munoz.1234@miremington.edu.co</i></strong> ; el ingreso a la Biblioteca Virtual y correo general sería <strong><i>nombre.muñoz.1234@miremington.edu.co</strong></i><p>
-
-            <p><strong>NOTA:</strong> Anexamos de igual forma los respectivos enlances para cada una de las Plataformas:</p>
+            <p><strong>NOTA:</strong> Enlaces de accesos a Plataformas:</p>
 
 
             <p><span class="emoji-size">&#128073;</span> <a href="http://biblioteca.uniremington.edu.co/index.php/login" target="_blank">Biblioteca Virtual</a></p>
 
-            <p class="space-60"><span class="emoji-size">&#128073;</span> <a href="https://tinyurl.com/y7pnn9vl" target="_blank">Correo General</a></p>
+            <p class="space-60"><span class="emoji-size">&#128073;</span> <a href="https://login.microsoftonline.com/common/oauth2/authorize?client_id=00000002-0000-0ff1-ce00-000000000000&redirect_uri=https%3a%2f%2foutlook.office365.com%2fowa%2f&resource=00000002-0000-0ff1-ce00-000000000000&response_mode=form_post&response_type=code+id_token&scope=openid&msafed=0&client-request-id=4d8a4cc9-5272-417f-b6a9-2afb99e8231e&protectedtoken=true&nonce=636784127086789396.4a79cd8b-e477-43b8-9c13-6ec308ba1b10&state=DYtJEoAwCMCojs_BUmFYnlOqZ49-Xw7J5JIGAHuxFY1KYMpqLuMy8org0FOmxbo98REzFE7HWINRn8XkOUcOavUe_f1m_wE&sso_reload=true" target="_blank">Correo General</a></p>
             
             <hr>
 
             <div class="center-tex">
                 <p>Si presenta algún tipo de inconveniente, comuníquese con el área de Tecnologías de la Información y las Comunicaciones de la sede:<p>
 
-                <p>Contacto:<p>                
-                <p><strong class="mail-color">administradormoodle@uniremingtonmanizales.edu.co</strong></p>
-                <p><strong class="mail-color">lidertic@uniremingtonmanizales.edu.co</strong></p>
+                <p>Contacto:<p>
 
-                <p>Teléfono: 885 2121 Ext. 105</p>
+                <p><span class="emoji-size">&#9993;</span>&nbsp;<strong class="mail-color">administradormoodle@uniremingtonmanizales.edu.co</strong></p>
+                
+                <p><span class="emoji-size">&#9993;</span>&nbsp;<strong class="mail-color">lidertic@uniremingtonmanizales.edu.co</strong></p>
 
-                <p>Chat en lína directamente desde el portal de acceso a credenciales.</p>
+                <p><span class="emoji-size">&#128222;</span>&nbsp;Teléfono: 885 2121 Ext. 113</p>
+
+                <p><span class="emoji-size">&#128640;</span>&nbsp;Chat en lína directamente desde el portal de acceso a credenciales.</p>
             </div>
 
             <hr>
