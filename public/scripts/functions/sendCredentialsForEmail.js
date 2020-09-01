@@ -76,7 +76,7 @@ const sendCredentialsForEmail = async() => {
                 title: '¡Perfecto!',
                 html: 'Hemos enviado un correo a la dirección: <strong>'+res+'</strong>', 
                 icon: 'success'
-            })
+            })            
         }else{
             Swal.fire({                
                 html: '<h4><strong>No hemos encontrado registros</strong></h4><br><br>Por favor, comunícate con el área de Tecnologías de la Información y las Comunicaciones de la sede:<br><br><strong>administradormoodle@uniremingtonmanizales.edu.co</strong><br>885 2121 Ext. 113<br>O comunícate a través del <strong>Chat en Línea</strong>',
@@ -84,6 +84,6 @@ const sendCredentialsForEmail = async() => {
             })
         }        
     })
-    .catch((error) => {        
+    .catch((error) => {
     })
 }

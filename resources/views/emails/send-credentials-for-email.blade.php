@@ -21,6 +21,7 @@
             margin: 20px;
             background-color: #ffffff;
             padding: 20px;
+            font-size: 16px;
         }
 
         .center-element {
@@ -58,9 +59,9 @@
     <div class="back-background">
         <div class="front-background">            
             <img class="center-element space-20" src="http://consultas.uniremingtonmanizales.edu.co/consultas/public/img/UniremingtonVerticalLogo.png" alt="">
-            <p><strong>! Hola {{ $credentials->name }} !</strong>, recibe un saludo de parte de Uniremington Manizales.</p>
+            <p><strong>¡Hola {{ $credentials->name }}!</strong> recibe un saludo de parte de Uniremington Manizales.</p>
 
-            <p class="space-60">A continuación encontrarás el usuario y contraseña para acceder a la Biblioteca Virtual Gustavo Vásquez Betancourt y al correo general de Uniremington</p>
+            <p class="space-60">A continuación encontrarás el usuario y contraseña para acceder a la Biblioteca Virtual Gustavo Vásquez Betancourt y al correo general de Uniremington.</p>
 
             <p><strong>Usuario: </strong>{{ $credentials->medellinMail }}</p>
 
@@ -70,7 +71,7 @@
 
             <p class="space-40">Correo institucional de Uniremington Manizales <strong>(@uniremingtonmanizales.edu.co)</strong> y el correo general de Uniremington <strong>(@miremington.edu.co)</strong></p>
 
-            <p><strong>NOTA:</strong> Enlaces de accesos a Plataformas:</p>
+            <p><strong>NOTA:</strong> Enlaces de acceso a Plataformas:</p>
 
 
             <p><span class="emoji-size">&#128073;</span> <a href="http://biblioteca.uniremington.edu.co/index.php/login" target="_blank">Biblioteca Virtual</a></p>
@@ -80,9 +81,9 @@
             <hr>
 
             <div class="center-tex">
-                <p>Si presenta algún tipo de inconveniente, comuníquese con el área de Tecnologías de la Información y las Comunicaciones de la sede:<p>
+                <p>Si presenta algún tipo de inconveniente, comuníquese con el área de Tecnologías de la Información y las Comunicaciones de la sede.<p>
 
-                <p>Contacto:<p>
+                <p><strong>Contacto:</strong><p>
 
                 <p><span class="emoji-size">&#9993;</span>&nbsp;<strong class="mail-color">administradormoodle@uniremingtonmanizales.edu.co</strong></p>
                 
