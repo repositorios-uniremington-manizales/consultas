@@ -4,7 +4,8 @@ let sendButton = document.getElementById('sendButton');
 //  Activar o desactivar el botón dependiendo de los datos ingresados
 identification.addEventListener('keydown', (e) => {    
     let key = e.keyCode || e.charCode;
-    if(key == 8 || e.target.value.length <= 6){
+
+    if(key == 8 || e.target.value.length <= 4){
         sendButton.classList.remove('btn-primary');
         sendButton.classList.add('btn-outline-primary');
         sendButton.setAttribute('disabled', true);
@@ -17,7 +18,8 @@ identification.addEventListener('keydown', (e) => {
 
 identification.addEventListener('focusout', (e) => {
     let key = e.keyCode || e.charCode;
-    if(e.target.value.length >= 8){
+    
+    if(e.target.value.length >= 6){
         sendButton.classList.remove('btn-outline-primary');
         sendButton.classList.add('btn-primary');
         sendButton.removeAttribute('disabled');
