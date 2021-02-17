@@ -71,7 +71,7 @@
     <div class="centerElement">
         <form>
             <label class="space-40"><h6>Ingresa tú número de cédula o tarjeta de identidad</h6></label>
-            <input id="identification" class="form-control space-40" type="text" maxlength="11" onKeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;">
+            <input onKeyDown="activateOrInactivateButton()" id="identification" class="form-control space-40" type="text" maxlength="11" onKeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;">
             <button type="submit" class="btn btn-outline-primary disabledButton" id="sendButton" disabled>Obtener credenciales</button>
         </form>
     </div>    

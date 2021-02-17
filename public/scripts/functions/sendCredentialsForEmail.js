@@ -1,20 +1,19 @@
-let identification = document.getElementById('identification');
 let sendButton = document.getElementById('sendButton');
 
-//  Activar o desactivar el botón dependiendo de los datos ingresados
-identification.addEventListener('keydown', (e) => {    
-    let key = e.keyCode || e.charCode;
-
-    if(key == 8 || e.target.value.length <= 4){
-        sendButton.classList.remove('btn-primary');
-        sendButton.classList.add('btn-outline-primary');
-        sendButton.setAttribute('disabled', true);
-    }else if(e.target.value >= 8 && (key >= 48 && key <= 57)){
+function activateOrInactivateButton(){
+    //  Activar o desactivar el botón dependiendo de los datos ingresados
+    let identification = document.getElementById('identification').value;
+    console.log(identification.length + 1);
+    if ((identification.length + 1) >= 6){
         sendButton.classList.remove('btn-outline-primary');
         sendButton.classList.add('btn-primary');
         sendButton.removeAttribute('disabled');
+    }else{
+        sendButton.classList.remove('btn-primary');
+        sendButton.classList.add('btn-outline-primary');
+        sendButton.setAttribute('disabled', true);
     }
-});
+}
 
 identification.addEventListener('focusout', (e) => {
     let key = e.keyCode || e.charCode;
@@ -48,10 +47,10 @@ sendButton.addEventListener('click', (e) => {
     e.target.setAttribute('disabled', true);
 });
 
-const sendCredentialsForEmail = async() => {    
+const sendCredentialsForEmail = async() => {
     let token = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
     
-    await fetch('api/send-credentials-for-email', {
+    fetch('api/send-credentials-for-email', {
         headers: {
             "Content-Type": "application/json",
             "Accept": "application/json, text-plain, */*",
@@ -63,20 +62,22 @@ const sendCredentialsForEmail = async() => {
         body: JSON.stringify({
             identification: identification.value
         })
-    })
-    .then((res) => {        
-        return res.json();
-    })
-    .then((res) => {        
+    })    
+    .then(async (res) => {
+
+        const response = await res.json();
+
+        console.log(response);        
+
         sendButton.innerHTML = 'Obtener credenciales';
         sendButton.classList.remove('btn-primary');
         sendButton.classList.add('btn-outline-primary');
         identification.value = '';
 
-        if(res != 'error'){
+        if (response != 'error'){
             Swal.fire({
                 title: '¡Perfecto!',
-                html: 'Hemos enviado un correo a la dirección: <strong>'+res+'</strong>', 
+                html: 'Hemos enviado un correo a la dirección: <strong>' + response +'</strong>', 
                 icon: 'success'
             })            
         }else{
