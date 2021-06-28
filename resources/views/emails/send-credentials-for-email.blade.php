@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <style>
         body {
             margin:0;
@@ -61,16 +62,16 @@
             <img class="center-element space-20" src="http://consultas.uniremingtonmanizales.edu.co/consultas/public/img/UniremingtonVerticalLogo.png" alt="">
             <p><strong>¡Hola {{ $credentials->name }}!</strong> recibe un saludo de parte de Uniremington Manizales.</p>
 
-            <p class="space-60">A continuación encontrarás el usuario y contraseña para acceder a la Biblioteca Virtual Gustavo Vásquez Betancourt y al correo general de Uniremington.</p>
+            <p class="space-60">A continuación encontrarás el usuario y contraseña para acceder a la Biblioteca Virtual Gustavo Vásquez Betancourt y al correo institucional Uniremington.</p>
 
-            <p><strong>Usuario: </strong>{{ $credentials->medellinMail }}</p>
+            <p><strong>Correo institucional: </strong>{{ $credentials->medellinMail }}</p>
 
             <p class="space-60"><strong>Contraseña: </strong>{{ $credentials->medellinPassword }}</p>
 
-            <p>Recuerda que a partir de la fecha tendrás acceso a dos correos electrónicos:<p>
+            <!-- <p>Recuerda que a partir de la fecha tendrás acceso a dos correos electrónicos:<p>
 
             <p class="space-40">Correo institucional de Uniremington Manizales <strong>(@uniremingtonmanizales.edu.co)</strong> y el correo general de Uniremington <strong>(@miremington.edu.co)</strong></p>
-
+ -->
             <p><strong>NOTA:</strong> Enlaces de acceso a Plataformas:</p>
 
 
@@ -85,13 +86,15 @@
 
                 <p><strong>Contacto:</strong><p>
 
-                <p><span class="emoji-size">&#9993;</span>&nbsp;<strong class="mail-color">administradormoodle@uniremingtonmanizales.edu.co</strong></p>
+                <p>✉️<i class="far fa-envelope"></i>&nbsp;<strong class="mail-color">alejandro.acevedo@uniremington.edu.co</strong></p>
                 
-                <p><span class="emoji-size">&#9993;</span>&nbsp;<strong class="mail-color">lidertic@uniremingtonmanizales.edu.co</strong></p>
+                <!-- <p><span class="emoji-size">&#9993;</span>&nbsp;<strong class="mail-color">lidertic@uniremingtonmanizales.edu.co</strong></p> -->
 
-                <p><span class="emoji-size">&#128222;</span>&nbsp;Teléfono: 885 2121 Ext. 113</p>
+                <p>📞&nbsp;Teléfono: 885 2121 Ext. 113</p>
 
-                <p><span class="emoji-size">&#128640;</span>&nbsp;Chat en lína directamente desde el portal de acceso a credenciales.</p>
+                <p>📱&nbsp;Whatsapp: 321 814 5855</p>
+
+                <p>✉️&nbsp;Chat en lína directamente desde el portal de acceso a credenciales.</p>
             </div>
 
             <hr>

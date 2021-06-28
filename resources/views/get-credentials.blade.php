@@ -74,7 +74,7 @@
             <input onKeyDown="activateOrInactivateButton()" id="identification" class="form-control space-40" type="text" maxlength="11" onKeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;">
             <button type="submit" class="btn btn-outline-primary disabledButton" id="sendButton" disabled>Obtener credenciales</button>
         </form>
-    </div>    
+    </div>
 
     <!--
     **   
